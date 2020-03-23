@@ -1,0 +1,11 @@
+-classpath 'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\build\\classes\\java\\main;C:\\Users\\Admin\\IdeaProjects\\Laborator6\\build\\resources\\main'
+-d 'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\build\\docs\\javadoc'
+-doctitle 'Laborator6 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'Laborator6 1.0-SNAPSHOT API'
+'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\src\\main\\java\\ConfigPanel.java'
+'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\src\\main\\java\\ControlPanel.java'
+'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\src\\main\\java\\DrawingPanel.java'
+'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\src\\main\\java\\Main.java'
+'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\src\\main\\java\\MainFrame.java'
+'C:\\Users\\Admin\\IdeaProjects\\Laborator6\\src\\main\\java\\RegularPolygon.java'

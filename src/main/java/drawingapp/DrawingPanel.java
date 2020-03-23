@@ -1,3 +1,4 @@
+package drawingapp;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;

@@ -1,0 +1,42 @@
+1. Am creat clasa MainFrame cu 3 atribute (configPanel, controlPanel si canvas)
+In metoda init am specificat prin metoda setDefaultCloseOperation() ca vreau sa fereastra
+sa se inchida la apasarea butonului close. Am creat componentele si le-am adaugat 
+in interiorul ferestrei, dupa care am apelat metoda pack pentru ca layout managerul sa
+dimensioneze fereastra si pozitiona componentele cat mai convenabil.
+
+2. Am creat clasa ConfigPanel cu 4 atribute: frame, a carei valoare este finala, odata asiganata
+o valoare aceasta nu poate fi schimbata, si o componenta Swing atomica Jlabel, si doua componente Swing
+Complexe JComboBoc si JSpinner.
+In metoda init se initializeaza componentele si se adauga in frame.
+
+3. Am creat clasa DrawingPanel cu urmatorele atribute:
+frame- a carei valoare este finala, odata asiganata o valoare aceasta nu poate fi schimbata
+W,H- de asemenea finale
+comboColo- care initial are valoarea random daca utilizatorul nu selecteaza alta culoare in ComboBox
+imag- reprezentand imaginea de fundal pe care urmeaza sa fie desenate forme geometrice
+graphics- obiectul necesar pentru a putea desena formele geometrice
+ 
+In metoda createOffscreenImage() se initializeaza image si graphics si se seteaza culoarea
+de fundal.
+In metoda init() se seteaza dimensiunile dorite pentru fereastra, se creaza un listener
+pentru mouse clicking responsabit cu desenarea poligonului, folosing conceptul de clasa anonima.
+Pentru a putea scrie sau desena in frame trebuie sa suprascriem metoda paintComponent.
+In metoda drawShape and generat o valore random pentru radius, am preluat numarul de laturi ale
+poligonului din frame.configPanel, am verificat daca utilizatorul a schimbat culoarea dorita in ComboBox
+si am atribuit o valoare corespunzatoare (random sau black). Am folosit metoda fill pentru a desena
+un poligon regulat cu informatiile de mai sus.
+
+4.
+In clasa ControlPanel am creat cele 4 butoane si le-am adaugat in frame. Pentru fiecare dintre ele am 
+adaugat un ActionListener ce referentiaza spre metode specifice.
+
+Metoda save: folosind ImageIO utility class si metoda write scriem frame.canvas.image intr-un fisier png. Poate 
+aparea IOExceptiond in cauza operatiilor de tip write pe care o tratam in interiorul metodei.
+
+Motoda load: folosind ImageIO utility class si metoda read citim datele din fisierul png intr-un obiect BufferedImage
+In frame.canvas.image punem imaginea citita, frame.canvas.graphics devine o zona de desenat insa cu noul background, iar apoi
+apelam metoda repaint()
+
+Metoda reset: image si graphics iau din nou valorile initiale dupa care se apeleazza repaint
+
+Metoda exit: Incheie rularea programului cu System.exit(0)
