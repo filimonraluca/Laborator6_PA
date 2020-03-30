@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 public class ConfigPanel extends JPanel {
     final MainFrame frame;
     JLabel sidesLabel;
+    JLabel colorLabel;
     JSpinner sidesField;
     JComboBox colorCombo;
 
@@ -21,7 +22,8 @@ public class ConfigPanel extends JPanel {
      */
 
     private void init() {
-        sidesLabel = new JLabel("Number of sides:");
+        sidesLabel = new JLabel("Number of sides for polygon:");
+        colorLabel = new JLabel("Color:");
         sidesField = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
         sidesField.setValue(6);
         String[] colors = {"black", "random"};
@@ -30,6 +32,7 @@ public class ConfigPanel extends JPanel {
         colorCombo.addActionListener(this::setColor);
         add(sidesLabel);
         add(sidesField);
+        add(colorLabel);
         add(colorCombo);
     }
 

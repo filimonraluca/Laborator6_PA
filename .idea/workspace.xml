@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68bc2be1-abe8-49d0-9057-65ad855b7d76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConfigPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConfigPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ControlPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ControlPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DrawingPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DrawingPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DrawingPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegularPolygon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegularPolygon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConfigPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ControlPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DrawingPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DrawingPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MainFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RegularPolygon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ConfigPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ConfigPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ControlPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/ConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/DrawingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/DrawingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/test.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +144,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laborator5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -251,7 +261,10 @@
       <updated>1584895602306</updated>
       <workItem from="1584895618666" duration="7130000" />
       <workItem from="1584956818101" duration="8258000" />
-      <workItem from="1584973300361" duration="1363000" />
+      <workItem from="1584973300361" duration="2123000" />
+      <workItem from="1585040608140" duration="6533000" />
+      <workItem from="1585491054344" duration="38000" />
+      <workItem from="1585559259132" duration="5283000" />
     </task>
     <servers />
   </component>
@@ -263,33 +276,37 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1584895662545" />
-    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1584896745858">
+    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1585045519244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584896745858" />
+    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585045519244" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1584973510094">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584973510094" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584975065524">
+    <state width="1323" height="89" key="GridCell.Tab.0.bottom" timestamp="1585565094723">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584975065524" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1584975065524">
+    <state width="1323" height="89" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585565094723" />
+    <state width="1323" height="89" key="GridCell.Tab.0.center" timestamp="1585565094722">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584975065524" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1584975065524">
+    <state width="1323" height="89" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585565094722" />
+    <state width="1323" height="89" key="GridCell.Tab.0.left" timestamp="1585565094722">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584975065524" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1584975065524">
+    <state width="1323" height="89" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585565094722" />
+    <state width="1323" height="89" key="GridCell.Tab.0.right" timestamp="1585565094722">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584975065524" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584974423956">
+    <state width="1323" height="89" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585565094722" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585491076548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584974423956" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585491076548" />
+    <state x="65" y="0" key="new project wizard" timestamp="1585491099377">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1585491099377" />
   </component>
 </project>

@@ -1,4 +1,5 @@
 package drawingapp;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -37,31 +38,52 @@ public class ControlPanel extends JPanel {
     }
 
     /**
-     * Aceasta metoda salveaza continutul din canvas.image
-     * intr-un fisier extern de tipul png
-     *
+     * Aceasta metoda am creat un JFileChooser pentru care
+     * am setat directorul, titlul si faptul ca poate
+     * selecta doar directoare si am apelat metoda
+     * showSaveDialog() care returneaza directorul ales
+     * sau null daca nu s-a selectat niciun director.
+     * In directorul ales am creat un fisier test.png
+     * cu imaginea curenta.
      * @param e
      */
 
     private void save(ActionEvent e) {
+        JFileChooser fc = new JFileChooser();
+        fc.setCurrentDirectory(new File("."));
+        fc.setDialogTitle("Choose location");
+        fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        fc.showSaveDialog(null);
         try {
-            ImageIO.write(frame.canvas.image, "PNG", new File("./test.png"));
+            frame.canvas.repaint();
+            ImageIO.write(frame.canvas.image, "PNG", new File(fc.getSelectedFile().getAbsolutePath() + "/test.png"));
         } catch (IOException ex) {
             System.err.println(ex);
         }
     }
 
     /**
-     * Aceasta metoda incarca continutul fisierului extern
-     * intr-un BufferedImage care va prelua rolul de imagine
-     * de fundal pentru aplicatie.
-     *
+     * Aceasta metoda am creat un JFileChooser pentru care
+     * am setat directorul, titlul si faptul ca poate
+     * selecta doar fisiere si am apelat metoda
+     * showSaveDialog() care returneaza directorul ales
+     * sau null daca nu s-a selectat niciun director.
+     * Am incercat fisierul ales si l-am setat ca imagine
+     * de fundal in canvas dupa care am apelat metoda repaint().
+     * De asemenea am golit listele cu forme si culorile lor.
      * @param e
      */
-
     private void load(ActionEvent e) {
+        JFileChooser fc = new JFileChooser();
+        fc.setCurrentDirectory(new File("."));
+        fc.setDialogTitle("Choose location");
+        fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        fc.showSaveDialog(null);
+        System.out.println(fc.getSelectedFile().getAbsolutePath());
         try {
-            BufferedImage image = ImageIO.read(new File("./test.png"));
+            BufferedImage image = ImageIO.read(new File(fc.getSelectedFile().getAbsolutePath()));
+            frame.canvas.shapes.clear();
+            frame.canvas.colors.clear();
             frame.canvas.image = image;
             frame.canvas.graphics = frame.canvas.image.createGraphics();
             frame.canvas.repaint();
@@ -73,12 +95,17 @@ public class ControlPanel extends JPanel {
     /**
      * Aceasta metoda atribuie obiectelor
      * canvas.image si canvas.graphics valorile initiale
+     * goleste listele cu formele si culorile aferente
+     * si redeseneaza.
      *
      * @param e
      */
     private void reset(ActionEvent e) {
         int W = frame.canvas.getWidth();
         int H = frame.canvas.getHeight();
+        frame.canvas.shapes.clear();
+        frame.canvas.colors.clear();
+        frame.canvas.createOffscreenImage();
         frame.canvas.image = new BufferedImage(W, H, BufferedImage.TYPE_INT_ARGB);
         frame.canvas.graphics = frame.canvas.image.createGraphics();
         frame.canvas.graphics.setColor(Color.WHITE);
