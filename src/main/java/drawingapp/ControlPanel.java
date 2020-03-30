@@ -2,6 +2,7 @@ package drawingapp;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
@@ -40,9 +41,7 @@ public class ControlPanel extends JPanel {
     /**
      * Aceasta metoda am creat un JFileChooser pentru care
      * am setat directorul, titlul si faptul ca poate
-     * selecta doar directoare si am apelat metoda
-     * showSaveDialog() care returneaza directorul ales
-     * sau null daca nu s-a selectat niciun director.
+     * selecta doar directoare.
      * In directorul ales am creat un fisier test.png
      * cu imaginea curenta.
      * @param e
@@ -53,21 +52,23 @@ public class ControlPanel extends JPanel {
         fc.setCurrentDirectory(new File("."));
         fc.setDialogTitle("Choose location");
         fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        fc.showSaveDialog(null);
-        try {
-            frame.canvas.repaint();
-            ImageIO.write(frame.canvas.image, "PNG", new File(fc.getSelectedFile().getAbsolutePath() + "/test.png"));
-        } catch (IOException ex) {
-            System.err.println(ex);
+        if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+            try {
+                frame.canvas.repaint();
+                ImageIO.write(frame.canvas.image, "PNG", new File(fc.getSelectedFile().getAbsolutePath() + "/test.png"));
+            } catch (IOException ex) {
+                System.err.println(ex);
+            }
+        }
+        else{
+            System.out.printf("A aparut o eroare!");
         }
     }
 
     /**
      * Aceasta metoda am creat un JFileChooser pentru care
      * am setat directorul, titlul si faptul ca poate
-     * selecta doar fisiere si am apelat metoda
-     * showSaveDialog() care returneaza directorul ales
-     * sau null daca nu s-a selectat niciun director.
+     * selecta doar fisiere.
      * Am incercat fisierul ales si l-am setat ca imagine
      * de fundal in canvas dupa care am apelat metoda repaint().
      * De asemenea am golit listele cu forme si culorile lor.
@@ -78,17 +79,22 @@ public class ControlPanel extends JPanel {
         fc.setCurrentDirectory(new File("."));
         fc.setDialogTitle("Choose location");
         fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        fc.showSaveDialog(null);
-        System.out.println(fc.getSelectedFile().getAbsolutePath());
-        try {
-            BufferedImage image = ImageIO.read(new File(fc.getSelectedFile().getAbsolutePath()));
-            frame.canvas.shapes.clear();
-            frame.canvas.colors.clear();
-            frame.canvas.image = image;
-            frame.canvas.graphics = frame.canvas.image.createGraphics();
-            frame.canvas.repaint();
-        } catch (IOException ex) {
-            System.err.println(ex);
+        fc.addChoosableFileFilter(new FileNameExtensionFilter(".png", "png"));
+        if( fc.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)
+        {
+            try {
+                BufferedImage image = ImageIO.read(new File(fc.getSelectedFile().getAbsolutePath()));
+                frame.canvas.shapes.clear();
+                frame.canvas.colors.clear();
+                frame.canvas.image = image;
+                frame.canvas.graphics = frame.canvas.image.createGraphics();
+                frame.canvas.repaint();
+            } catch (IOException ex) {
+                System.err.println(ex);
+            }
+        }
+        else{
+            System.out.println("A aparut o eroare!");
         }
     }
 

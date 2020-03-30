@@ -10,22 +10,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConfigPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ControlPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DrawingPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DrawingPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MainFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RegularPolygon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ConfigPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ConfigPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab6.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ControlPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/DrawingPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/ConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ShapePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/drawingapp/ShapePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/DrawingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/DrawingPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drawingapp/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawingapp/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/test.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +252,7 @@
       <workItem from="1584973300361" duration="2123000" />
       <workItem from="1585040608140" duration="6533000" />
       <workItem from="1585491054344" duration="38000" />
-      <workItem from="1585559259132" duration="5283000" />
+      <workItem from="1585559259132" duration="7021000" />
     </task>
     <servers />
   </component>
@@ -284,22 +272,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584973510094" />
-    <state width="1323" height="89" key="GridCell.Tab.0.bottom" timestamp="1585565094723">
+    <state width="1323" height="93" key="GridCell.Tab.0.bottom" timestamp="1585566400525">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="89" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585565094723" />
-    <state width="1323" height="89" key="GridCell.Tab.0.center" timestamp="1585565094722">
+    <state width="1323" height="93" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585566400525" />
+    <state width="1323" height="93" key="GridCell.Tab.0.center" timestamp="1585566400524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="89" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585565094722" />
-    <state width="1323" height="89" key="GridCell.Tab.0.left" timestamp="1585565094722">
+    <state width="1323" height="93" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585566400524" />
+    <state width="1323" height="93" key="GridCell.Tab.0.left" timestamp="1585566400524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="89" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585565094722" />
-    <state width="1323" height="89" key="GridCell.Tab.0.right" timestamp="1585565094722">
+    <state width="1323" height="93" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585566400524" />
+    <state width="1323" height="93" key="GridCell.Tab.0.right" timestamp="1585566400525">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="89" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585565094722" />
+    <state width="1323" height="93" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585566400525" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585491076548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

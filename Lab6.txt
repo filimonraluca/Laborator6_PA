@@ -40,3 +40,22 @@ apelam metoda repaint()
 Metoda reset: image si graphics iau din nou valorile initiale dupa care se apeleazza repaint
 
 Metoda exit: Incheie rularea programului cu System.exit(0)
+
+
+!!Optional
+
+1. Pentru primul punct am creat clasa shapePanel care contine un comboBox din care se poate selecta
+forma dorita. shapeCombo are un listener care seteaza forma dorita si in DrawingPanel. Pe langa
+clasa deja existenta RegularPolygon am creat clasele NodeShape si Rectangle care extind clasa Rectangle2D.Double
+folosita pentru desenarea formelor geometrice. Constructorii clasei primesc coordonatele unde forma trebuie desenata
+si raza formei.
+
+2. Pentru punctul doi am folosit clasa JFileChooser pentru care am setat titlul ferestrei, ca poate selecta
+doar directoare pentru metoda save si doar fisiere pentru metoda load. Pentru metoda save am apelat metoda showSaveDialog
+pentru a folosi un "Save File" chooser, iar pentru load showOpenDialog pentru a utiliza un "Open File" chooser. 
+
+3. Pentru a putea sterge forme am memorat intr-o lista toate formele desenate. Pentru fiecare forma am memorat si culoarea
+aferenta intr-o lista de culori. Am modificat metoda paintComponent astfel in cat sa parcurga formele din lista
+si sa le deseneze, de asemenea am apelat si metoda drawImage pentru a desena o imagine cu pozitia specificata.
+Pentru a sterge o imagine am creat un buton undo in clasa ShapePanel care are asociat un action listener care referentiaza
+metoda locata undo. In metoda undo an redesenat ultima culoare din lista cu alb si am sters-o din lista de forme.
